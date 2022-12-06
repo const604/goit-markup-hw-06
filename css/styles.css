@@ -81,7 +81,7 @@ body {
 } */
 
 .logo {
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -103,7 +103,7 @@ body {
 
 .nav-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -283,7 +283,7 @@ body {
 
 .section-title {
   margin-bottom: 72px;
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
@@ -592,8 +592,6 @@ body {
 }
 
 .footer-input-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-input {
@@ -607,11 +605,16 @@ body {
   background-color: transparent;
 }
 
-.footer-input-desc {
+.footer-input-field {
+  display: flex;
+  flex-direction: column;
   color: var(--primary-white-color);
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-input-desc {
   margin-bottom: 16px;
 }
 
@@ -630,9 +633,11 @@ body {
   padding-left: 24px;
   padding-right: 64px;
   border-radius: 4px;
+  border: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
+  font-size: inherit;
   font-family: inherit;
   line-height: 1.5;
   letter-spacing: 0.06em;
@@ -684,7 +689,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px;
   width: 408px;
-  height: 576px;
+  height: 579px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -766,11 +771,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input-icon.person {
-  top: 11px;
-  border-right: 1.25px solid #000000;
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
